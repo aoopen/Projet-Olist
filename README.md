@@ -1,51 +1,127 @@
-# TP SQL : analyse de la marketplace Olist
+# 🛒 Analyse de données e-commerce – Olist
 
-Ton dépôt personnel pour le TP de la semaine. Tout ce que tu rends se trouve ici.
+## 📌 Présentation du projet
 
-**L'énoncé complet, le planning de la semaine et les ressources sont sur
-prof404 : https://prof404.agents.kaffein.tech/ressources**
+Ce projet porte sur l'analyse de données de la marketplace brésilienne Olist.
 
-Ce dépôt ne contient que la structure et les scripts de mise en place. Ne recopie
-pas l'énoncé ici, il évolue et la version qui fait foi est celle en ligne.
+L'objectif est d'exploiter des données issues de l'activité e-commerce afin d'en extraire des informations utiles à la compréhension des performances commerciales, de la livraison et de la satisfaction client.
 
-## Mise en place
+Le projet repose principalement sur SQL pour interroger et analyser les données, ainsi que sur Python pour produire des visualisations.
 
-Les données ne sont pas dans ce dépôt (trop volumineuses, et ce n'est pas le rôle
-de git). Récupère le dossier `data/` fourni par ton formateur, puis :
+Il s'inscrit dans une démarche d'analyse décisionnelle visant à transformer des données brutes en indicateurs pertinents pour le métier.
 
-1. `setup/01_creation_tables.sql` crée les 8 tables.
-2. `setup/02_chargement_donnees.sql` charge les CSV. Ouvre-le d'abord et remplace
-   les chemins `C:\path\to\file\` par le chemin réel de ton dossier `data/`.
+## 🎯 Objectifs
 
-Vérifie ensuite les volumes attendus, ils sont listés dans l'énoncé en ligne. Si
-un compte ne tombe pas juste, corrige avant d'aller plus loin.
+- Mettre en place une base de données relationnelle.
+- Contrôler la qualité et la cohérence des données.
+- Analyser les performances commerciales de la marketplace.
+- Étudier les commandes et les comportements d'achat.
+- Analyser les délais de livraison.
+- Explorer les indicateurs liés à la satisfaction client.
+- Construire des visualisations pour communiquer les résultats.
 
-## Structure attendue
+## 🛠️ Technologies utilisées
 
+- **SQL** : interrogation et analyse des données relationnelles.
+- **Python** : analyse et manipulation des données.
+- **Pandas** : traitement des données.
+- **Jupyter Notebook** : analyse exploratoire et visualisation.
+- **Git / GitHub** : gestion du projet et versionnement.
+
+## 🔎 Étapes du projet
+
+### 1. Préparation de la base de données
+- Création des tables.
+- Définition des relations entre les différentes tables.
+- Chargement des fichiers CSV.
+- Vérification des volumes de données.
+
+### 2. Contrôle qualité des données
+- Identification des valeurs manquantes.
+- Vérification des doublons.
+- Contrôle de la cohérence des données.
+- Vérification des relations entre les tables.
+
+### 3. Analyse commerciale
+- Exploration des commandes.
+- Analyse des ventes.
+- Étude des performances commerciales.
+- Extraction d'indicateurs pertinents pour l'activité e-commerce.
+
+### 4. Analyse de la livraison et de la satisfaction
+- Étude des délais de livraison.
+- Analyse des retards éventuels.
+- Exploration des avis clients.
+- Recherche de liens entre livraison et satisfaction.
+
+### 5. Visualisation et synthèse
+- Création de graphiques.
+- Présentation des principaux indicateurs.
+- Formalisation des conclusions dans une synthèse métier.
+
+## 📁 Structure du projet
+
+```text
+Projet-Olist/
+│
+├── data/
+│   └── Fichiers CSV (à récupérer séparément)
+│
+├── notebook/
+│   └── visualisations.ipynb
+│
+├── setup/
+│   ├── 01_creation_tables.sql
+│   └── 02_chargement_donnees.sql
+│
+├── sql/
+│   ├── 01_controle_qualite.sql
+│   ├── 02_analyse_commerciale.sql
+│   └── 03_livraison_satisfaction.sql
+│
+├── SYNTHESE.md
+└── README.md
 ```
-sql/
-  01_controle_qualite.sql        partie 1
-  02_analyse_commerciale.sql     partie 2
-  03_livraison_satisfaction.sql  partie 3
-notebook/
-  visualisations.ipynb           partie 4
-SYNTHESE.md                      ta synthèse d'une page
+
+## 🚀 Installation et utilisation
+
+### 1. Cloner le dépôt
+
+```bash
+git clone https://github.com/aoopen/Projet-Olist.git
+cd Projet-Olist
 ```
 
-## Ce qui est rendu
+### 2. Récupérer les données
 
-1. Les fichiers `sql/`, commentés, qui s'exécutent du début à la fin sans erreur.
-2. Le notebook avec les quatre graphiques.
-3. `SYNTHESE.md`, une page pour un responsable métier, sans SQL dedans.
+Les fichiers CSV ne sont pas inclus dans le dépôt en raison de leur volume.
 
-## Rythme
+Récupérer le dossier `data/` auprès du formateur et le placer à la racine du projet.
 
-**Commite à la fin de chaque journée**, même si ce n'est pas fini. Un dépôt vide
-en milieu de semaine est le seul vrai signal d'alerte.
+### 3. Préparer la base de données
 
-## Bloqué ?
+Exécuter les scripts dans l'ordre :
 
-Plus de vingt minutes sur le même point : pose ta question sur
-https://prof404.agents.kaffein.tech/dashboard
+1. `setup/01_creation_tables.sql`
+2. Modifier les chemins des fichiers CSV dans `setup/02_chargement_donnees.sql`.
+3. Exécuter `setup/02_chargement_donnees.sql`.
 
-Précise ce que tu as déjà essayé et le message d'erreur exact.
+### 4. Réaliser les analyses
+
+Exécuter les scripts SQL dans le dossier `sql/`, puis ouvrir le notebook de visualisation.
+
+## 💡 Compétences développées
+
+- SQL et requêtes relationnelles
+- Jointures entre plusieurs tables
+- Agrégations et indicateurs KPI
+- Contrôle qualité des données
+- Analyse commerciale
+- Analyse de la satisfaction client
+- Analyse des performances logistiques
+- Data Visualization
+- Python et Jupyter Notebook
+
+---
+
+**Projet d'analyse de données e-commerce réalisé dans le cadre d'une mise en pratique des compétences Data Analyst.**
